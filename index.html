@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa de Reformas Integrales | Nuestros Servicios</title>
+    <meta name="description" content="Especialistas en reformas integrales, pladur, pintura, fontanería, electricidad, diseño de cocinas y renders 3D. Pide tu presupuesto gratis.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-XXXXXXXXX');
+    </script>
+
+    <style>
+        /* --- ESTILOS GENERALES & PALETA MINIMALISTA --- */
+        :root {
+            --blanco-puro: #ffffff;
+            --fondo-claro: #fcfcfc;
+            --gris-suave: #f4f4f4;
+            --gris-medio: #777777;
+            --negro-mate: #1a1a1a;
+            --accent-dorado: #c5a880; 
+            --whatsapp-color: #25d366;
+            --fuente-principal: 'Montserrat', sans-serif;
+            --transicion: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--fuente-principal);
+            background-color: var(--blanco-puro);
+            color: var(--negro-mate);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* --- CONTENEDORES Y DISEÑO DE BLOQUES --- */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .text-center { text-align: center; }
+        
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            color: var(--negro-mate);
+            line-height: 1.4;
+        }
+
+        /* --- HEADER / NAVEGACIÓN --- */
+        header {
+            background-color: rgba(255, 255, 255, 0.95);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            border-bottom: 1px solid var(--gris-suave);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--negro-mate);
+            text-decoration: none;
+        }
+
+        .logo span {
+            font-weight: 300;
+            color: var(--accent-dorado);
+        }
+
+        .nav-contact-btn {
+            background-color: var(--negro-mate);
+            color: var(--blanco-puro);
+            padding: 10px 22px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-decoration: none;
+            border: 1px solid var(--negro-mate);
+            transition: var(--transicion);
+        }
+
+        .nav-contact-btn:hover {
+            background-color: transparent;
+            color: var(--negro-mate);
+        }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            padding-top: 140px;
+            padding-bottom: 80px;
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+                        url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            min-height: 90vh;
+            color: var(--blanco-puro);
+        }
+
+        .hero-content {
+            max-width: 700px;
+            text-align: left;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 400;
+            line-height: 1.1;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        .services-list {
+            list-style: none;
+            margin-bottom: 40px;
+        }
+
+        .services-list li {
+            font-size: 1.25rem;
+            font-weight: 400;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+        }
+
+        .services-list li::before {
+            content: "•";
+            color: var(--blanco-puro);
+            font-size: 1.8rem;
+            margin-right: 12px;
+            line-height: 1;
+        }
+
+        .cta-group {
+            display: flex;
+            gap: 15px;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background-color: var(--negro-mate);
+            color: var(--blanco-puro);
+            padding: 16px 35px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-decoration: none;
+            border: 1px solid var(--negro-mate);
+            transition: var(--transicion);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--blanco-puro);
+            color: var(--negro-mate);
+            border-color: var(--blanco-puro);
+        }
+
+        /* --- SECCIÓN GARANTÍA / DESTACADOS --- */
+        .gallery-section {
+            background-color: var(--fondo-claro);
+        }
+
+        .guarantee-wrapper {
+            max-width: 900px;
+            margin: 0 auto 50px auto;
+        }
+
+        .gallery-table {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+            border-collapse: separate;
+            border-spacing: 20px;
+        }
+
+        .gallery-row {
+            display: table-row;
+        }
+
+        .gallery-item {
+            display: table-cell;
+            background-color: var(--blanco-puro);
+            border: 1px solid var(--gris-suave);
+            vertical-align: top;
+            overflow: hidden;
+        }
+
+        .img-container {
+            width: 100%;
+            height: 350px;
+            overflow: hidden;
+            background-color: var(--gris-suave);
+        }
+
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transicion);
+            filter: grayscale(15%);
+        }
+
+        .gallery-item:hover .img-container img {
+            transform: scale(1.05);
+            filter: grayscale(0%);
+        }
+
+        .item-info {
+            padding: 25px;
+        }
+
+        .item-info h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .item-info p {
+            font-size: 0.9rem;
+            color: var(--gris-medio);
+            font-weight: 300;
+        }
+
+        /* --- PROCESO DE TRABAJO --- */
+        .process-table {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+            border-collapse: separate;
+            border-spacing: 30px;
+            margin-top: 20px;
+        }
+
+        .process-step {
+            display: table-cell;
+            text-align: center;
+            vertical-align: top;
+        }
+
+        .step-number {
+            font-size: 2.5rem;
+            font-weight: 300;
+            color: var(--accent-dorado);
+            margin-bottom: 15px;
+        }
+
+        .process-step h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+
+        .process-step p {
+            font-size: 0.9rem;
+            color: var(--gris-medio);
+            font-weight: 300;
+        }
+
+        /* --- FORMULARIO DE CONTACTO --- */
+        .contact-section {
+            background-color: var(--negro-mate);
+            color: var(--blanco-puro);
+        }
+
+        .contact-section .section-title {
+            color: var(--blanco-puro);
+        }
+
+        .contact-section .section-subtitle {
+            color: #999999;
+            font-size: 1rem;
+            font-weight: 300;
+            margin-bottom: 50px;
+            letter-spacing: 1px;
+        }
+
+        .form-wrapper {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-control {
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid #444444;
+            font-family: var(--fuente-principal);
+            font-size: 1rem;
+            color: var(--blanco-puro);
+            padding: 12px 5px;
+            font-weight: 300;
+            transition: var(--transicion);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-bottom: 1px solid var(--accent-dorado);
+        }
+
+        select.form-control {
+            color: #999999;
+            background-color: var(--negro-mate);
+        }
+
+        select.form-control option {
+            background-color: var(--negro-mate);
+            color: var(--blanco-puro);
+        }
+
+        .form-control::placeholder {
+            color: #555555;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .checkbox-group input {
+            margin-top: 4px;
+        }
+
+        .checkbox-group label {
+            font-size: 0.8rem;
+            color: #999999;
+            font-weight: 300;
+        }
+
+        .checkbox-group a {
+            color: var(--accent-dorado);
+            text-decoration: none;
+        }
+
+        .btn-submit {
+            width: 100%;
+            background-color: var(--blanco-puro);
+            color: var(--negro-mate);
+            border: 1px solid var(--blanco-puro);
+            padding: 18px;
+            font-family: var(--fuente-principal);
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: var(--transicion);
+        }
+
+        .btn-submit:hover {
+            background-color: transparent;
+            color: var(--blanco-puro);
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background-color: #111111;
+            color: #666666;
+            padding: 40px 0;
+            font-size: 0.8rem;
+            border-top: 1px solid #222222;
+        }
+
+        .footer-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-links a {
+            color: #666666;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: var(--transicion);
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-dorado);
+        }
+
+        /* --- BOTÓN FLOTANTE WHATSAPP --- */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 30px;
+            background-color: var(--whatsapp-color);
+            color: var(--blanco-puro);
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: var(--transicion);
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            background-color: #20ba5a;
+        }
+
+        /* --- RESPONSIVIDAD MÓVIL --- */
+        @media (max-width: 768px) {
+            .hero { padding-top: 120px; text-align: center; }
+            .hero h1 { font-size: 2.2rem; }
+            .services-list { display: inline-block; text-align: left; }
+            .cta-group { justify-content: center; }
+            .gallery-table, .gallery-row, .gallery-item,
+            .process-table, .process-step {
+                display: block;
+                width: 100%;
+                border-spacing: 0;
+                margin-bottom: 25px;
+            }
+            .gallery-item { margin-bottom: 30px; }
+            .img-container { height: 280px; }
+            .footer-flex { flex-direction: column; text-align: center; }
+            .footer-links { margin-top: 10px; }
+            .footer-links a { margin: 0 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-XXXXXXXXX/YYYYYYYYYYYY',
+            'event_callback': callback
+        });
+        return false;
+      }
+    </script>
+
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo"><span>EMPRESA DE</span> REFORMAS INTEGRALES</a>
+            <a href="#contacto" class="nav-contact-btn">Pedir Presupuesto</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Nuestros Servicios</h1>
+                <ul class="services-list">
+                    <li>Reformas Integrales</li>
+                    <li>Pladur</li>
+                    <li>Pintura</li>
+                    <li>Fontanería</li>
+                    <li>Diseño e instalación de muebles de cocina</li>
+                    <li>Electricidad</li>
+                    <li>Render 3D</li>
+                </ul>
+                <div class="cta-group">
+                    <a href="#contacto" class="btn-primary">Solicitar Presupuesto Gratis</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="gallery-section">
+        <div class="container">
+            <div class="text-center guarantee-wrapper">
+                <h2 class="section-title">Compromiso firmado por contrato, cumplimiento estricto de plazos y un servicio post-obra con garantía total en Mallorca.</h2>
+            </div>
+            
+            <div class="gallery-table">
+                <div class="gallery-row">
+                    <div class="gallery-item">
+                        <div class="img-container">
+                            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80" alt="Cocina moderna minimalista integrada">
+                        </div>
+                        <div class="item-info">
+                            <h3>Muebles de cocina a medida</h3>
+                            <p>Integración total de espacios utilizando islands monolíticas, frentes limpios sin tiradores y optimización absoluta de la luz natural.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <div class="img-container">
+                            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Baño minimalista moderno">
+                        </div>
+                        <div class="item-info">
+                            <h3>Reformas de baños</h3>
+                            <p>Espacios relajantes basados en microcemento, revestimientos geométricos suaves y contraste marcado con griferías negro mate.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proceso">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">El Proceso</h2>
+                <p class="section-subtitle">Sencillo, transparente y sin sorpresas en el presupuesto final.</p>
+            </div>
+
+            <div class="process-table">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <h3>Visita y Presupuesto</h3>
+                    <p>Medimos tu espacio, escuchamos tus necesidades y te entregamos una valoración económica detallada sin costes ni compromisos.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <h3>Diseño 3D y Materiales</h3>
+                    <p>Definimos la paleta cromática, la distribución y los acabados minimalistas definitivos antes de colocar el primer ladrillo.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <h3>Ejecución y Llaves en mano</h3>
+                    <p>Coordinamos todo nuestro equipo de industriales bajo una dirección estricta de obra, cumpliendo rigurosamente los plazos de entrega.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Cuéntanos tu proyecto</h2>
+                <p class="section-subtitle">Recibe una propuesta de diseño y presupuesto personalizado en menos de 48 horas.</p>
+            </div>
+
+            <div class="form-wrapper">
+                <form id="adsContactForm" action="mailto:baumanninteriorismo@hotmail.com" method="POST" enctype="text/plain" onsubmit="return handleFormSubmit(event)">
+                    
+                    <div class="form-group">
+                        <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre completo" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="tel" id="telefono" name="telefono" class="form-control" placeholder="Teléfono de contacto" required>
+                    </div>
+
+                    <div class="form-group">
+                        <select id="tipo_reforma" name="tipo_reforma" class="form-control" required>
+                            <option value="" disabled selected>Tipo de reforma</option>
+                            <option value="integral">Reforma Integral de Vivienda</option>
+                            <option value="cocina">Reforma de Cocina</option>
+                            <option value="bano">Reforma de Baño</option>
+                            <option value="otro">Otras estancias / Locales</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="mensaje" name="mensaje" rows="4" class="form-control" placeholder="Cuéntanos brevemente qué idea tienes pensada para tu hogar..." required></textarea>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="privacidad" name="privacidad" required>
+                        <label for="privacidad">Acepto la <a href="#politica-privacidad">política de privacidad</a> y doy consentimiento para que me contacten telefónicamente o vía email para la entrega del presupuesto.</label>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Enviar Solicitud Gratis</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-flex">
+            <div>
+                <p>&copy; 2026 EMPRESA DE REFORMAS INTEGRALES. Todos los derechos reservados.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#aviso-legal" id="aviso-legal">Aviso Legal</a>
+                <a href="#politica-privacidad" id="politica-privacidad">Política de Privacidad</a>
+                <a href="#cookies" id="cookies">Cookies</a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/34610178712?text=Hola,%20estoy%20interesado%20en%20recibir%20informaci%C3%B3n%20y%20presupuesto%20para%20una%20reforma%20integral." class="whatsapp-float" target="_blank" rel="noopener noreferrer" title="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        function handleFormSubmit(event) {
+            const nombre = document.getElementById('nombre').value;
+            const telefono = document.getElementById('telefono').value;
+            
+            console.log("Formulario listo para envío. Disparando conversión Google Ads.");
+            
+            alert("¡Muchas gracias por contactar con nosotros, " + nombre + "! Se abrirá tu gestor de correo para enviar tu solicitud. Nos ponernos en contacto contigo en tu teléfono (" + telefono + ") lo antes posible.");
+            
+            // Opcional: Activar la función de conversión cuando vincules tus IDs reales de Google Ads
+            // gtag_report_conversion();
+
+            return true;
+        }
+    </script>
+
+</body>
+</html>
